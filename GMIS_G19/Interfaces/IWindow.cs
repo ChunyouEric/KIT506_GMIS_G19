@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GMIS_G19.Handlers;
 
-namespace GMIS_G19
+namespace GMIS_G19.Interfaces
 {
-    class StudentGroup
+    public interface IWindow
     {
-        public int Group_id { get; set; }
-        public string Group_name { get; set; }
+        ScreenManager ScreenManager { get; set; }
     }
 }

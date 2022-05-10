@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace GMIS_G19
+namespace GMIS_G19.Models
 {
     
     class Meeting
@@ -15,8 +11,6 @@ namespace GMIS_G19
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public string Room { get; set; }
-
-
     }
 
   

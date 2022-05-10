@@ -12,17 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GMIS_G19;
+using GMIS_G19.Handlers;
+using GMIS_G19.Interfaces;
+using GMIS_G19.Views;
 
-namespace GMIS_G19
+namespace Views.GMIS_G19
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class MainWindow : Window, IWindow
     {
-        public UserControl1()
+	    public ScreenManager ScreenManager { get; set; }
+        public MainWindow()
         {
             InitializeComponent();
+            ScreenManager = new ScreenManager(MainFrame, this);
+            ScreenManager.LoadHome();
         }
+
     }
 }

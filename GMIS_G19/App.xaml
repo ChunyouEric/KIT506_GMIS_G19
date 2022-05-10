@@ -2,12 +2,6 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:GMIS_G19"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-        <local:Class x:Key="class"/>
-        <ObjectDataProvider x:Key="studentList"
-                            ObjectInstance="{StaticResource class}"
-                            MethodName="GetViewableList">
-        </ObjectDataProvider>
-    </Application.Resources>
+             xmlns:models="clr-namespace:GMIS_G19.Models"
+             StartupUri="Views/MainWindow.xaml">
 </Application>
